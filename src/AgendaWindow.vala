@@ -63,6 +63,11 @@ namespace Agenda {
                     background-color: #FFFFFF;
                 }
 
+                .titlebar {
+                    background-image: none;
+                    border: none;
+                }
+
                 GtkTreeView {
                     color: #333;
                     background-color: #FFF;
@@ -178,6 +183,7 @@ namespace Agenda {
         private void setup_ui () {
 
             header = new Gtk.HeaderBar ();
+            header.get_style_context().add_class("compact");
             header.set_show_close_button (true);
             this.set_titlebar (header);
 
