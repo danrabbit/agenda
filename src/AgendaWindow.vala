@@ -84,6 +84,7 @@ namespace Agenda {
                                                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
             this.get_style_context().add_class("agenda-window");
+            this.get_style_context().add_class("rounded");
 
             this.set_size_request(MIN_WIDTH, MIN_HEIGHT);
 
